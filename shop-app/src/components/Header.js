@@ -14,10 +14,10 @@ function Header() {
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
-
+  
   return (
     <header>
-      <img src="../assets/images/logo (2).png" alt="Logo de hockey shop" />
+      <img src={'../assets/images/logo (2).png'} alt="Logo de hockey shop" />
       <nav>
         <ul>
           <li><Link to="/">Inicio</Link></li>

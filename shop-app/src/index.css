@@ -60,6 +60,7 @@ p {
 h1 {
   font-family: "Roboto";
   font-style: italic;
+  align-items: center;
 }
 
 header {

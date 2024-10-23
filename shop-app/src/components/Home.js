@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import { importAllImages } from '../utilidades';
-
-// Importar todas las imágenes desde la carpeta assets/images
-const image = importAllImages(require.context('../assets/', false, /\.(png|jpe?g|svg|webp)$/));
-
-
+import image1 from '../assets/images/bauer vapo 3x pro 2.webp';
+import image2 from '../assets/images/ccm casco.webp'
+import image3 from '../assets/images/codera bauer supreme.webp'
+import image4 from '../assets/images/guantes ccm.webp'
+import image5 from '../assets/images/pads warrior.webp'
+import image6 from '../assets/images/palo warrior.webp'
 
 function Home() {
   
@@ -15,42 +15,42 @@ function Home() {
       name: 'Patines Bauer Vapor 3x Pro',
       price: 650,
       description: 'Patín de gama alta para un gran desempeño en cancha! Contamos con todos los talles!',
-      image: image['../assets/images/bauer vapo 3x pro.webp'],
+      image: image1,
     },
     {
       id: 2,
       name: 'Casco CCM 4500',
       price: 150,
       description: 'Casco de gama media, ideal para aquellos que quieran protegerse sin sumar peso extra. Consulte por talles especiales!',
-      image: image['../assets/images/ccm casco.webp'],
+      image: image2,
     },
     {
       id: 3,
       name: 'Coderas Bauer Supreme',
       price: 75,
       description: 'Coderas de gama media, con protección de policarbonato para disminuir el peso sin perder seguridad! Cuenta con sujección de tres puntos para mayor confort!',
-      image: image['../assets/images/codera bauer supreme.webp'],
+      image: image3,
     },
     {
       id: 4,
       name: 'Guantes CCM AS 580',
       price: 120,
       description: 'Guante de gama alta, cuenta con palma de doble capa, fabricada con cuero sintético para un mejor grip y durabilidad. Tenemos todos los talles!',
-      image: image['../assets/images/guantes ccm.webp'],
+      image: image4,
     },
     {
       id: 5,
       name: 'Pads Warrior LX Pro',
       price: 130,
       description: 'Pads de gama alta a un precio especial! Modelo regular fit, para un mayor confort a la hora de jugar! Tenemos todos los talles!',
-      image: image['../assets/images/pads warrior.webp'],
+      image: image5,
     },
     {
       id: 6,
       name: 'Stick Warrior Alpha LX',
       price: 85,
       description: 'Palo de gama media-alta, ideal para aquellos que necesiten llevar su tiro a los niveles más altos! Contamos con stock inmediato para zurdos o diestros, incluyendo 3 tipos de flex!',
-      image: image['../assets/images/palo warrior.webp'],
+      image: image6, 
     },
   ];
 
@@ -83,6 +83,7 @@ function Home() {
   return (
     <div className="home-page">
       <h1>Charrúas Hockey Shop</h1>
+      <br></br>
       <section className="product-list">
         {products.map(product => (
           <div key={product.id} className="product-card">
