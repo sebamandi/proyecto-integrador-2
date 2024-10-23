@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHARRUAS HOCKEY SHOP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/images/logo (2).png" alt="Logo de hockey shop">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="alta.html">Alta de Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Contacto</h1>
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comments">Comentarios:</label>
+            <textarea id="comments" name="comments" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p> <p>Somos Charrúas Hockey Shop 
+            <br>Todos los derechos reservados
+            <br>Por consultas: <a href="mailto:consultas@charruashs.com">consultas@charruashs.com</a></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+<style>
+    body {
+        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./assets/images/torneo\ \(2\).jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+    </style>
+</html>

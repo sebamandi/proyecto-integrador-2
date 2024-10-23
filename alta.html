@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de Productos - CHARRUAS HOCKEY SHOP</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/images/logo (2).png" alt="Logo de hockey shop">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="alta.html">Alta de Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Alta de Productos</h1>
+        <form id="product-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="price">Precio:</label>
+            <input type="number" id="price" name="price" required>
+
+            <label for="stock">Stock:</label>
+            <input type="number" id="stock" name="stock" required>
+
+            <label for="brand">Marca:</label>
+            <input type="text" id="brand" name="brand" required>
+
+            <label for="category">Categoría:</label>
+            <input type="text" id="category" name="category" required>
+
+            <label for="short-description">Descripción Corta:</label>
+            <textarea id="short-description" name="short-description" required></textarea>
+
+            <label for="long-description">Descripción Larga:</label>
+            <textarea id="long-description" name="long-description" required></textarea>
+
+            <label for="free-shipping">Envío sin cargo:</label>
+            <input type="checkbox" id="free-shipping" name="free-shipping">
+
+            <label for="age-from">Edad Desde:</label>
+            <input type="number" id="age-from" name="age-from" required>
+
+            <label for="age-to">Edad Hasta:</label>
+            <input type="number" id="age-to" name="age-to" required>
+
+            <label for="photo">Foto:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <button type="submit">Agregar Producto</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p> <p>Somos Charrúas Hockey Shop 
+            <br>Todos los derechos reservados
+            <br>Por consultas: <a href="mailto:consultas@charruashs.com">consultas@charruashs.com</a></p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+<style>
+    body {
+        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('./assets/images/torneo\ \(5\).jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+    }
+    </style>
+</html>
