@@ -5,6 +5,7 @@ import Alta from './components/Alta';
 import Contacto from './components/Contacto';
 import Nosotros from './components/Nosotros';
 import Header from './components/Header';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/nosotros" element={<Nosotros />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
