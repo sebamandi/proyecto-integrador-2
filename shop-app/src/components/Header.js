@@ -27,8 +27,7 @@ function Header() {
         </ul>
       </nav>
       <form action="#" method="GET">
-        <input type="text" placeholder="Buscar..." />
-        <button type="submit">Buscar</button>
+        <input type="text" placeholder="Buscar..." /><button type="submit">Buscar</button>
       </form>
 
       {/* Botón del carrito */}
